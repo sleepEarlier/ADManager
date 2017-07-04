@@ -14,13 +14,13 @@ extern NSString *const KMADManagerDailyTimeKey;
 
 
 
-@class ADManager;
+@class KMADManager;
 
-typedef BOOL(^ShowADFilter)(ADManager *manager, BOOL isFirstLaunch, BOOL reachTimeThreshold, BOOL reachMaxSessionTime, BOOL reachMaxDailyTime);
+typedef BOOL(^ShowADFilter)(KMADManager *manager, BOOL isFirstLaunch, BOOL reachTimeThreshold, BOOL reachMaxSessionTime, BOOL reachMaxDailyTime);
 
-typedef void(^ShowADAction)(ADManager *manager, BOOL isFirstLaunch);
+typedef void(^ShowADAction)(KMADManager *manager, BOOL isFirstLaunch);
 
-@interface ADManager : NSObject
+@interface KMADManager : NSObject
 
 /// should exclude app active from screen unlock, default YES
 @property (nonatomic, assign) BOOL excludeFromScreenLock;
@@ -46,7 +46,7 @@ typedef void(^ShowADAction)(ADManager *manager, BOOL isFirstLaunch);
 /// block execute when app first time launch / come to foreground and - shouldShowAD return YES
 @property (nonatomic, copy) ShowADAction showADAction;
 
-+ (ADManager *)sharedInstace;
++ (KMADManager *)sharedInstace;
 
 
 @end

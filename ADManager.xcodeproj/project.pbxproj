@@ -18,7 +18,7 @@
 		DCBA64451F0A3FAE006CE720 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCBA64431F0A3FAE006CE720 /* Main.storyboard */; };
 		DCBA64471F0A3FAE006CE720 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCBA64461F0A3FAE006CE720 /* Assets.xcassets */; };
 		DCBA644A1F0A3FAE006CE720 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCBA64481F0A3FAE006CE720 /* LaunchScreen.storyboard */; };
-		DCBA64531F0A3FBE006CE720 /* ADManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DCBA64521F0A3FBE006CE720 /* ADManager.m */; };
+		DCBA64531F0A3FBE006CE720 /* KMADManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DCBA64521F0A3FBE006CE720 /* KMADManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,8 +37,8 @@
 		DCBA64461F0A3FAE006CE720 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DCBA64491F0A3FAE006CE720 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DCBA644B1F0A3FAE006CE720 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DCBA64511F0A3FBE006CE720 /* ADManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADManager.h; sourceTree = "<group>"; };
-		DCBA64521F0A3FBE006CE720 /* ADManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADManager.m; sourceTree = "<group>"; };
+		DCBA64511F0A3FBE006CE720 /* KMADManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KMADManager.h; sourceTree = "<group>"; };
+		DCBA64521F0A3FBE006CE720 /* KMADManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KMADManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,8 +75,8 @@
 				DCBA643E1F0A3FAE006CE720 /* AppDelegate.m */,
 				DCBA64401F0A3FAE006CE720 /* ViewController.h */,
 				DCBA64411F0A3FAE006CE720 /* ViewController.m */,
-				DCBA64511F0A3FBE006CE720 /* ADManager.h */,
-				DCBA64521F0A3FBE006CE720 /* ADManager.m */,
+				DCBA64511F0A3FBE006CE720 /* KMADManager.h */,
+				DCBA64521F0A3FBE006CE720 /* KMADManager.m */,
 				DCBA64431F0A3FAE006CE720 /* Main.storyboard */,
 				DCBA64461F0A3FAE006CE720 /* Assets.xcassets */,
 				DCBA64481F0A3FAE006CE720 /* LaunchScreen.storyboard */,
@@ -178,7 +178,7 @@
 			files = (
 				DCBA64421F0A3FAE006CE720 /* ViewController.m in Sources */,
 				DCBA643F1F0A3FAE006CE720 /* AppDelegate.m in Sources */,
-				DCBA64531F0A3FBE006CE720 /* ADManager.m in Sources */,
+				DCBA64531F0A3FBE006CE720 /* KMADManager.m in Sources */,
 				DCBA643C1F0A3FAE006CE720 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -304,7 +304,7 @@
 				DEVELOPMENT_TEAM = 7QMD9LVCM8;
 				INFOPLIST_FILE = ADManager/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.boyaa.dalianAPPID;
+				PRODUCT_BUNDLE_IDENTIFIER = com.KMTest.t;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -316,7 +316,7 @@
 				DEVELOPMENT_TEAM = 7QMD9LVCM8;
 				INFOPLIST_FILE = ADManager/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.boyaa.dalianAPPID;
+				PRODUCT_BUNDLE_IDENTIFIER = com.KMTest.t;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "ADManager.h"
+#import "KMADManager.h"
 
 @interface ADHelper : NSObject
 
@@ -70,12 +70,12 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    ADManager *mag = [ADManager sharedInstace];
+    KMADManager *mag = [KMADManager sharedInstace];
     mag.maxDailyShowTimes = 5;
     mag.maxSessionShowTimes = 3;
     mag.excludeFromScreenLock = NO;
     mag.timeThreshold = 0.5;
-    mag.showADAction = ^(ADManager *manager, BOOL isFirstLaunch) {
+    mag.showADAction = ^(KMADManager *manager, BOOL isFirstLaunch) {
         NSString *imageName = [NSString stringWithFormat:@"ad%@.jpg",@(manager.dailyShowTimes)];
         NSLog(@"isFirstLaunch:%@",@(isFirstLaunch));
         UIImage *image = [UIImage imageNamed:imageName];

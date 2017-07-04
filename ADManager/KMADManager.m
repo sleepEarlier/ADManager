@@ -6,26 +6,26 @@
 //  Copyright © 2017年 KimiLin. All rights reserved.
 //
 
-#import "ADManager.h"
+#import "KMADManager.h"
 
 NSString *const KMADManagerTimeThresholdLastDateKey = @"KMADManagerTimeThresholdLastTimeKey";
 NSString *const KMADManagerTimeThresholdCurrentDateKey = @"KMADManagerTimeThresholdCurrentTimeKey";
 NSString *const KMADManagerDailyDateKey = @"KMADManagerDailyDateKey";
 NSString *const KMADManagerDailyTimeKey = @"KMADManagerDailyTimeKey";
 
-@interface ADManager ()
+@interface KMADManager ()
 @property (nonatomic, strong) NSCalendar *calendar;
 @property (nonatomic, assign) NSUInteger sessionShowTimes;
 @end
 
-@implementation ADManager
+@implementation KMADManager
 
 + (instancetype)sharedInstace
 {
-    static ADManager *instance = nil;
+    static KMADManager *instance = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        instance = [[ADManager alloc] init];
+        instance = [[KMADManager alloc] init];
     });
     return instance;
 }
