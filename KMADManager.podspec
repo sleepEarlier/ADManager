@@ -79,8 +79,8 @@ Pod::Spec.new do |s|
   #  Specify the location from where the source should be retrieved.
   #  Supports git, hg, bzr, svn and HTTP.
   #
-  #:tag => "#{s.version}"
-  s.source       = { :git => "https://github.com/sleepEarlier/ADManager.git",  }
+  #
+  s.source       = { :git => "https://github.com/sleepEarlier/ADManager.git", :tag => "#{s.version}" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
