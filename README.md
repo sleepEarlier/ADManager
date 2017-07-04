@@ -1,6 +1,6 @@
 # ADManager
 Some Apps would display an AD when App launch or App enter foreground.
-This is a simple tool help to control when and how much times the AD should be displayed.
+This is a simple tool help to control when and how many times the AD should be displayed.
 
 ### Controls
 * **excludeFromScreenLock**, should exclude the situation that app enter foreground by unlock screen. YES by default.
